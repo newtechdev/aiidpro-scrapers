@@ -1,0 +1,14 @@
+### Health Check
+GET http://localhost/
+
+### Generate Report
+POST http://localhost/identity-iq
+Content-Type: application/json
+
+{
+    "user_id": "abc123xyz098",
+    "username": "jbc895@gmail.com",
+    "password": "badcredit101",
+    "last_four_digits": "7733"
+}
+

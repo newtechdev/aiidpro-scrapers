@@ -1,0 +1,15 @@
+version: '3'
+services:
+  aiidpro-scrapers:
+    build: .
+    container_name: aiidpro-scrapers
+    ports:
+      - "80:80"
+#    volumes:
+#      - ./app:/usr/share/app
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
