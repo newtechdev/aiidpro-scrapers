@@ -36,7 +36,7 @@ async def root():
 
 
 @app.post("/identity-iq")
-async def predict(identity_iq_user: IdentityIqUser, bt: BackgroundTasks) -> str:
+async def predict(identity_iq_user: IdentityIqUser) -> str:
     print(identity_iq_user)
 
     current_time = time.time() * 1000
