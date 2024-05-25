@@ -9,5 +9,5 @@ python-dotenv~=1.0.0
 itemadapter~=0.9.0
 python-scrapyd-api==2.1.2
 scrapyd==1.4.3
-scrapyd-client==1.0.1
+scrapyd-client==1.2.3
 uvicorn==0.29.0
