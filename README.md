@@ -16,12 +16,14 @@ pip install -r requirements.txt
 <p>Then copy-paste following</p>
 <pre><code>[Unit]
 Description=Scrapyd service
-After=network.target<br><br>
+After=network.target<br>
+  
 [Service]
 User=&lt;YOUR-USER&gt;
 Group=&lt;USER-GROUP&gt;
 WorkingDirectory=/any/directory/here
-ExecStart=/usr/local/bin/scrapyd<br><br>
+ExecStart=/usr/local/bin/scrapyd<br>
+  
 [Install]
 WantedBy=multi-user.target</code></pre>
 <p>Then enable service</p>
