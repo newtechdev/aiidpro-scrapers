@@ -7,7 +7,11 @@ Python 3.10+
 Works on Linux (Ubuntu)
 ## Install
 ### Clone Repository and install packages
-<pre><code></code></pre>
+<pre><code>
+git clone
+cd app
+pip install -r requirements.txt
+</code></pre>
 ### Set ScrapyD as a System Service
 <pre><code>sudo nano /lib/systemd/system/scrapyd.service</code></pre>
 <p>Then copy-paste following</p>
@@ -34,16 +38,4 @@ WantedBy=multi-user.target</code></pre>
 <pre><code>scrapyd-deploy default</code></pre>
 
 ### Set FastAPI as a System Service
-git clone
-<br>
-cd app
-<br>
-python3 -m venv venv
-<br>
-pip install -r requirements.txt
-<br>
-nohup scrapyd &
-<br>
-scrapyd-deploy default
-<br>
 nohup uvicorn main:app --host 0.0.0.0 --port 80
