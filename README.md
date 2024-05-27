@@ -9,19 +9,19 @@ Works on Linux (Ubuntu)
 ### Set ScrapyD as a System Service
 sudo nano /lib/systemd/system/scrapyd.service
 
-  [Unit]  
-  Description=Scrapyd service  
-  After=network.target  
-  
-  [Service]  
-  User=YOUR-USER  
-  Group=USER-GROUP  
-  WorkingDirectory=/any/directory/here  
-  ExecStart=/usr/local/bin/scrapyd
+<pre><code>[Unit]
+Description=Scrapyd service
+After=network.target
 
-  [Install]
-  
-  WantedBy=multi-user.target
+[Service]
+User=&lt;YOUR-USER&gt;
+Group=&lt;USER-GROUP&gt;
+WorkingDirectory=/any/directory/here
+ExecStart=/usr/local/bin/scrapyd
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
 
 ### Set FastAPI as a System Service
 git clone
