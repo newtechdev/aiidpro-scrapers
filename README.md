@@ -9,8 +9,8 @@ Works on Linux (Ubuntu)
 ### Set ScrapyD as a System Service
 sudo nano /lib/systemd/system/scrapyd.service
 
-
-[Unit]<br>
+<code>
+[Unit]
 
 Description=Scrapyd service
 
@@ -19,13 +19,14 @@ After=network.target
 
 [Service]
 
-<code>User=<Your-User></code>
+User=<Your-User>
 
 Group=<USER-GROUP>
 
 WorkingDirectory=/any/directory/here
 
 ExecStart=/usr/local/bin/scrapyd
+</code>
 
 ### Set FastAPI as a System Service
 git clone
