@@ -23,7 +23,7 @@ User=&lt;YOUR-USER&gt;
 Group=&lt;USER-GROUP&gt;
 WorkingDirectory=/any/directory/here
 ExecStart=/usr/local/bin/scrapyd
-
+<br>
 [Install]
 WantedBy=multi-user.target
 </code></pre>
