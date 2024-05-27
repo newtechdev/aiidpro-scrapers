@@ -19,9 +19,9 @@ After=network.target
 
 [Service]
 
-User=<Your-User>
+User=
 
-Group=<USER-GROUP>
+Group=
 
 WorkingDirectory=/any/directory/here
 
