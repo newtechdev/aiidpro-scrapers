@@ -19,9 +19,9 @@ sudo nano /lib/systemd/system/scrapyd.service
   
   [Service]
   
-  User=
+  User=YOUR-USER
   
-  Group=
+  Group=USER-GROUP
   
   WorkingDirectory=/any/directory/here
   
