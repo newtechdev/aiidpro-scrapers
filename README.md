@@ -1,6 +1,6 @@
 # AIIDpro Scrapy
 ## Overview
-This project includes scrapy spider named with "IdentityIQ" and fastAPI to call spider.
+This project includes scrapy spider named with "IdentityIQ" and fastAPI to schedule spider.
 ## Requirements
 Python 3.10+
 <br>
