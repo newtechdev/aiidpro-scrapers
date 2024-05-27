@@ -30,6 +30,11 @@ WantedBy=multi-user.target
 <pre><code>systemctl start scrapyd.service
 </code></pre>
 
+### Deploy IdentityIQ scrapy project
+<pre>
+  <code>scrapyd-deploy default</code>
+</pre>
+
 ### Set FastAPI as a System Service
 git clone
 <br>
