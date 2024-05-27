@@ -3,24 +3,29 @@
 This project includes scrapy spider named with "IdentityIQ" and fastAPI to schedule spider.
 ## Requirements
 Python 3.10+
-<br>
+
 Works on Linux (Ubuntu)
 ## Install
 ### Set ScrapyD as a System Service
 sudo nano /lib/systemd/system/scrapyd.service
 
 
->  [Unit]<br>
->  Description=Scrapyd service
->  After=network.target
+[Unit]<br>
 
->  [Service]
->  User=<Your-User>
->  Group=<USER-GROUP>
->  WorkingDirectory=/any/directory/here
->  ExecStart=/usr/local/bin/scrapyd
+Description=Scrapyd service
 
-<br>
+After=network.target
+
+
+[Service]
+
+User=<Your-User>
+
+Group=<USER-GROUP>
+
+WorkingDirectory=/any/directory/here
+
+ExecStart=/usr/local/bin/scrapyd
 
 ### Set FastAPI as a System Service
 git clone
