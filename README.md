@@ -21,6 +21,7 @@ sudo nano /lib/systemd/system/scrapyd.service
   ExecStart=/usr/local/bin/scrapyd<br>
 </p>
 <br>
+
 ### Set FastAPI as a System Service
 git clone
 <br>
