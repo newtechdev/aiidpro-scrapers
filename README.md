@@ -17,12 +17,15 @@ pip install -r requirements.txt
 <pre><code>[Unit]
 Description=Scrapyd service
 After=network.target
-[Service]<br>
+  
+[Service]
 User=&lt;YOUR-USER&gt;
 Group=&lt;USER-GROUP&gt;
 WorkingDirectory=/any/directory/here
 ExecStart=/usr/local/bin/scrapyd
-[Install]<br>WantedBy=multi-user.target</code></pre>
+
+[Install]
+WantedBy=multi-user.target</code></pre>
 <p>Then enable service</p>
 <pre><code>systemctl enable scrapyd.service
 </code></pre>
