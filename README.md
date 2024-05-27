@@ -6,6 +6,8 @@ Python 3.10+
 <br>
 Works on Linux
 ## Install
+### Set ScrapyD as a System Service
+sudo nano /lib/systemd/system/scrapyd.service
 git clone
 <br>
 cd app
