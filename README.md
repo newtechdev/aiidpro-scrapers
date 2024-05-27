@@ -21,7 +21,7 @@ After=network.target
 [Service]
 User=&lt;YOUR-USER&gt;
 Group=&lt;USER-GROUP&gt;
-WorkingDirectory=/any/directory/here
+WorkingDirectory=/app
 ExecStart=/usr/local/bin/scrapyd
 <br>
 [Install]
@@ -46,7 +46,7 @@ After=network.target
 [Service]
 User=&lt;YOUR-USER&gt;
 Group=&lt;USER-GROUP&gt;
-WorkingDirectory=/any/directory/here
+WorkingDirectory=/app
 ExecStart=/usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 80
 <br>
 [Install]
