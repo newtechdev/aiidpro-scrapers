@@ -7,8 +7,7 @@ Python 3.10+
 Works on Linux (Ubuntu)
 ## Install
 ### Clone Repository and install packages
-<pre><code>
-git clone
+<pre><code>git clone
 cd app
 pip install -r requirements.txt
 </code></pre>
@@ -31,8 +30,7 @@ WantedBy=multi-user.target</code></pre>
 <pre><code>systemctl enable scrapyd.service
 </code></pre>
 <p>Then start service</p>
-<pre><code>systemctl start scrapyd.service
-</code></pre>
+<pre><code>systemctl start scrapyd.service</code></pre>
 
 ### Deploy IdentityIQ scrapy project
 <pre><code>scrapyd-deploy default</code></pre>
