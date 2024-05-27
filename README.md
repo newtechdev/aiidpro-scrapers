@@ -11,14 +11,14 @@ sudo nano /lib/systemd/system/scrapyd.service
 
 
 >  [Unit]<br>
->  Description=Scrapyd service<br>
->  After=network.target<br>
+>  Description=Scrapyd service
+>  After=network.target
 
->  [Service]<br>
->  User=<Your-User><br>
->  Group=<USER-GROUP><br>
->  WorkingDirectory=/any/directory/here<br>
->  ExecStart=/usr/local/bin/scrapyd<br>
+>  [Service]
+>  User=<Your-User>
+>  Group=<USER-GROUP>
+>  WorkingDirectory=/any/directory/here
+>  ExecStart=/usr/local/bin/scrapyd
 
 <br>
 
