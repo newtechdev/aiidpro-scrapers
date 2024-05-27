@@ -6,9 +6,10 @@ Python 3.10+
 
 Works on Linux (Ubuntu)
 ## Install
+### Clone Repository and install packages
+<pre><code></code></pre>
 ### Set ScrapyD as a System Service
-<pre><code>sudo nano /lib/systemd/system/scrapyd.service
-</code></pre>
+<pre><code>sudo nano /lib/systemd/system/scrapyd.service</code></pre>
 <p>Then copy-paste following</p>
 <pre><code>[Unit]
 Description=Scrapyd service
@@ -21,8 +22,7 @@ WorkingDirectory=/any/directory/here
 ExecStart=/usr/local/bin/scrapyd
 
 [Install]
-WantedBy=multi-user.target
-</code></pre>
+WantedBy=multi-user.target</code></pre>
 <p>Then enable service</p>
 <pre><code>systemctl enable scrapyd.service
 </code></pre>
@@ -31,9 +31,7 @@ WantedBy=multi-user.target
 </code></pre>
 
 ### Deploy IdentityIQ scrapy project
-<pre>
-  <code>scrapyd-deploy default</code>
-</pre>
+<pre><code>scrapyd-deploy default</code></pre>
 
 ### Set FastAPI as a System Service
 git clone
