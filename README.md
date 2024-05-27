@@ -7,8 +7,9 @@ Python 3.10+
 Works on Linux (Ubuntu)
 ## Install
 ### Set ScrapyD as a System Service
-sudo nano /lib/systemd/system/scrapyd.service
-
+<pre><code>sudo nano /lib/systemd/system/scrapyd.service
+</code></pre>
+<p>Then copy-paste following</p>
 <pre><code>[Unit]
 Description=Scrapyd service
 After=network.target
@@ -21,6 +22,12 @@ ExecStart=/usr/local/bin/scrapyd
 
 [Install]
 WantedBy=multi-user.target
+</code></pre>
+<p>Then enable service</p>
+<pre><code>systemctl enable scrapyd.service
+</code></pre>
+<p>Then start service</p>
+<pre><code>systemctl start scrapyd.service
 </code></pre>
 
 ### Set FastAPI as a System Service
