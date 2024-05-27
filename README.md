@@ -10,22 +10,22 @@ Works on Linux (Ubuntu)
 sudo nano /lib/systemd/system/scrapyd.service
 
 <code>
-[Unit]
-
-Description=Scrapyd service
-
-After=network.target
-
-
-[Service]
-
-User=
-
-Group=
-
-WorkingDirectory=/any/directory/here
-
-ExecStart=/usr/local/bin/scrapyd
+  [Unit]
+  
+  Description=Scrapyd service
+  
+  After=network.target
+  
+  
+  [Service]
+  
+  User=
+  
+  Group=
+  
+  WorkingDirectory=/any/directory/here
+  
+  ExecStart=/usr/local/bin/scrapyd
 </code>
 
 ### Set FastAPI as a System Service
