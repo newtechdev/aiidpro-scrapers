@@ -17,7 +17,7 @@ pip install -r requirements.txt
 <pre><code>[Unit]
 Description=Scrapyd service
 After=network.target
-
+<br>
 [Service]
 User=&lt;YOUR-USER&gt;
 Group=&lt;USER-GROUP&gt;
