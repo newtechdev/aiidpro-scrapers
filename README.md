@@ -37,4 +37,23 @@ WantedBy=multi-user.target
 <pre><code>scrapyd-deploy default</code></pre>
 
 ### Set FastAPI as a System Service
-nohup uvicorn main:app --host 0.0.0.0 --port 80
+<pre><code>sudo nano /lib/systemd/system/aiidpro-backend.service</code></pre>
+<p>Then copy-paste following</p>
+<pre><code>[Unit]
+Description=AIIDpro backend service
+After=network.target
+<br>
+[Service]
+User=&lt;YOUR-USER&gt;
+Group=&lt;USER-GROUP&gt;
+WorkingDirectory=/any/directory/here
+ExecStart=/usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 80
+<br>
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>Then enable service</p>
+<pre><code>systemctl enable aiidpro-backend.service
+</code></pre>
+<p>Then start service</p>
+<pre><code>systemctl start aiidpro-backend.service</code></pre>
