@@ -20,6 +20,7 @@ sudo nano /lib/systemd/system/scrapyd.service
   ExecStart=/usr/local/bin/scrapyd
 
   [Install]
+  
   WantedBy=multi-user.target
 
 ### Set FastAPI as a System Service
